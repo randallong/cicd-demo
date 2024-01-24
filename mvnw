@@ -83,7 +83,7 @@ if $cygwin ; then
     CLASSPATH=$(cygpath --path --unix "$CLASSPATH")
 fi
 
-# For Mingw, ensure paths are in UNIX format before anything is touched
+# For Mingw, ensure paths are in UNIX format before anything is touched 
 if $mingw ; then
   [ -n "$JAVA_HOME" ] && [ -d "$JAVA_HOME" ] &&
     JAVA_HOME="$(cd "$JAVA_HOME" || (echo "cannot cd into $JAVA_HOME."; exit 1); pwd)"
