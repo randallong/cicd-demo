@@ -63,9 +63,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Grant execute permissions to mvnw
-        run: chmod +x mvnw
-      - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/maven@master
         continue-on-error: true # To make sure that SARIF upload gets called
