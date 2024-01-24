@@ -62,7 +62,7 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2 #testing @v2 instead of @master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/maven@master
         continue-on-error: true # To make sure that SARIF upload gets called
