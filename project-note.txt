@@ -1,2 +1,17 @@
-Steps in CIWorkshop v3.7 were followed all the way through from pg1 to pg45 (create and link GitHub to Railway). However, Railway plan is Limited Trial, which does not allow code deployments.
-Java v17 was used as it is the version that I am currently using on my PC
+Java v17 was used as it is the version currently used on my PC
+
+Steps in CIWorkshop v3.7 were followed all the way through from pg1 to pg57
+
+However, Railway plan is Limited Trial, which does not allow code deployments,
+hence final step in Railway, deployment, and containerization could not be completed.
+
+Snyk configuration returned the following error: "Error: Path does not exist: snyk.sarif"
+Upon further investigation, the preceding step, "Run Snyk to check for vulnerabilities", showed the following:
+-----
+Child process failed with exit code: 126.
+Run in debug mode (-d) to see STDERR and STDOUT.
+STDERR:
+/bin/sh: 1: ./mvnw: Permission denied
+-----
+Code was checked through and attempts to resolve the issue via various ways proved unsuccessful.
+Could not find any other relevant info, hence sarif part of code was commented out.
