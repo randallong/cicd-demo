@@ -1,0 +1,2 @@
+Steps in CIWorkshop v3.7 were followed all the way through from pg1 to pg45 (create and link GitHub to Railway). However, Railway plan is Limited Trial, which does not allow code deployments.
+Java v17 was used as it is the version that I am currently using on my PC
